@@ -696,3 +696,38 @@ footer {
   font-weight: bold;
   color: white;
 }
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #00aa66;
+  padding: 20px;
+}
+
+.mobile-nav a {
+  color: #fff;
+  padding: 10px 0;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-nav.open {
+  display: flex;
+}
+
+/* Responsive Rules */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

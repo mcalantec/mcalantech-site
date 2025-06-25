@@ -41,3 +41,6 @@ function closeModal(id) {
     modal.style.display = 'none';
   }
 }
+document.getElementById('menu-toggle').addEventListener('click', () => {
+  document.getElementById('mobile-nav').classList.toggle('open');
+});
